@@ -72,31 +72,23 @@ const elm=useRef(null)
 
       <Box p={2} ref={elm}
         sx={{
-          overflowY: "auto",
-          // height: "100%",
-          border: "2px solid orange", flex: "auto"
+          overflowY: "auto"
+          , flex: "auto"
         }}>
 
         <Typography variant='h4' fontWeight="bold"
           mb={2} sx={{
             color: "#fff"
-
           }}>
-
-
           {selectedCategory}
-
           <span style={{
             color: "#f31503"
           }}>Videos</span>
         </Typography>
-
         {loading ? <Stack direction="row" flexWrap="wrap" gap={"1rem"}>
-
           <Loading />
         </Stack> :
           <Videos videos={videos} />
-
         }
 
       </Box>

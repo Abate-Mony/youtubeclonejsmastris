@@ -13,10 +13,7 @@ const ChannelCards = ({ channelDetail }) => {
     <Box sx={{
       boxShadow: "none", border: "2px solid orange",
       borderRadius: "20px", display: "grid", placeItems: "center"
-      , width: {
-        xs: "min(365px ,  calc(100vw - 20px))"
-        , md: "320px"
-      }
+      
       , margin: "auto", height: "326px",my:2
     }}>
 
@@ -34,7 +31,7 @@ const ChannelCards = ({ channelDetail }) => {
             sx={{
               borderRadius: "50%",
               height: "180px",
-              width: "180px", mb: 2, border: "3px solid #e3e3e3"
+              width: "100%", mb: 2, border: "3px solid #e3e3e3"
             }}
           >   </CardMedia>
           <Typography variant='h6' sx={{
